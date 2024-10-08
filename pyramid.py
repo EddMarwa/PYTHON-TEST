@@ -1,15 +1,15 @@
 def print_pyramid(n, row=1):
-    # Base condition
+    # Base condition: If current row exceeds total rows, stop recursion
     if row > n:
         return
     
-    # Print leading spaces
+    # Calculate and print leading spaces to center the stars
     print(' ' * (n - row), end='')
     
-    # Print stars
+    # Print stars with a space
     print('* ' * row)
     
-    # Recursive call to print next row
+    # Recursive call to print the next row
     print_pyramid(n, row + 1)
 
 # Example usage:
