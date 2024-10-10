@@ -1,19 +1,13 @@
-def is_palindrome(s):
-    # Remove spaces and convert to lowercase for uniformity
-    s = s.replace(" ", "").lower()
+def palindrome(p):
+    p = p.replace(" ", "").lower()
     
-    # Reverse the string
-    reversed_s = s[::-1]
-    
-    # Check if original and reversed strings are the same
-    if s == reversed_s:
+    reversed_p = p[::-1]
+    if p == reversed_p:
         return True
     else:
         return False
-
-# Example usage:
 input_str = "Racecar"
-if is_palindrome(input_str):
+if palindrome(input_str):
     print(f'"{input_str}" is a palindrome.')
 else:
     print(f'"{input_str}" is not a palindrome.')

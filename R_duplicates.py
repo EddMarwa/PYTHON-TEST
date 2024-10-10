@@ -1,4 +1,4 @@
-def remove_duplicates(s):
+def duplicates(s):
     seen = set()
     result = ""
     for char in s:
@@ -7,8 +7,8 @@ def remove_duplicates(s):
             result += char
     return result
 
-# Example usage:
-input_str = "HelloWorld"
-output_str = remove_duplicates(input_str)
-print(f"Original string: {input_str}")
-print(f"String after removing duplicates: {output_str}")
+input_str = "TOYOTA COROLLA"
+output_str = duplicates(input_str)
+print("Original string: " + input_str)
+print("String after removing duplicates: " + output_str)
+
